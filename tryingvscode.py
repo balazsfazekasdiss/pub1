@@ -14,9 +14,7 @@ import urllib.request
 def main():
     # Load data
 
-    csv_url = 'https://raw.githubusercontent.com/balazsfazekasdiss/pub1/tryingvscodealt/output.csv'
-    with urllib.request.urlopen(csv_url, allow_redirects=True) as req:
-        df = pd.read_csv(req)
+    df = pd.read_csv('C:/Users/Balazs/Documents/diss visualization ideas/presentation/diss02/output.csv')
     
     # Create a list of pages
     
