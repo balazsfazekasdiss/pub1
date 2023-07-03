@@ -20,8 +20,15 @@ def main():
             df = pd.read_csv(req)
     
     # Create a list of pages
-    pages = ['Home', 'I. Literature Review', 'II. Methods used report', 'III. Visualizations', 'IV. CFA & SEM', 'V. Research Questions', 'VI. Appendix and Code']
-
+    pages = [
+    'Home',
+    'I. Literature Review',
+    'II. Methods used report',
+    'III. Visualizations',
+    'IV. CFA & SEM',
+    'V. Research Questions',
+    'VI. Appendix and Code'
+]
     # Create a selectbox for navigation
     page = st.sidebar.selectbox('Page Navigation', options=pages)
 
