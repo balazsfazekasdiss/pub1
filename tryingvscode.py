@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 
 def main():
     # Load data
-    df = pd.read_csv('C:/Users/Balazs/Documents/diss visualization ideas/presentation/diss02/output.csv')
+    df = pd.read_csv('https://github.com/balazsfazekasdiss/pub1/output.csv')
 
     # Create a list of pages
     pages = ['Home', 'I. Literature Review', 'II. Methods used report', 'III. Visualizations', 'IV. CFA & SEM', 'V. Research Questions', 'VI. Appendix and Code']
