@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from wordcloud import WordCloud
 import plotly.graph_objects as go
-import urllib.request
+
 
 # Open the URL with redirection handling
 
