@@ -15,9 +15,9 @@ def main():
     # Load data
 
     csv_url = 'https://raw.githubusercontent.com/balazsfazekasdiss/pub1/tryingvscodealt/output.csv'
-    print(f"Opening URL: {csv_url}")
-    with urllib.request.urlopen(csv_url, allow_redirects=True) as req:
-        df = pd.read_csv(req)
+    try:
+        with urllib.request.urlopen(csv_url, allow_redirects=True) as req:
+            df = pd.read_csv(req)
     
     # Create a list of pages
     pages = ['Home', 'I. Literature Review', 'II. Methods used report', 'III. Visualizations', 'IV. CFA & SEM', 'V. Research Questions', 'VI. Appendix and Code']
